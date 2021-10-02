@@ -1,10 +1,8 @@
 import * as React from 'react';
 import rock from "../../images/icon-rock.svg";
+import { ClassTypeProp } from '../../models/interface';
 
-interface RockProps {
-  classType: string;
-}
-const Rock: React.FC<RockProps> = (props:RockProps) => {
+const Rock: React.FC<ClassTypeProp> = (props:ClassTypeProp) => {
   return ( <div className={props.classType}>
       <div className="inner-circle">
         <img src={rock} alt="rock"/>
