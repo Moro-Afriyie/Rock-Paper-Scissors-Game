@@ -5,7 +5,7 @@ import Rock from './components/icons/Rock';
 function App() {
   return (
     <div className="App">
-     <Rock />
+     <Rock classType="circle" />
     </div>
   );
 }
