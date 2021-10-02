@@ -1,13 +1,13 @@
 import * as React from 'react';
-import rock from "../../images/icon-rock.svg";
 import { ClassTypeProp } from '../../models/interface';
+import paper from "../../images/icon-paper.svg";
 
-const Rock: React.FC<ClassTypeProp> = (props) => {
+const Paper: React.FunctionComponent<ClassTypeProp> = (props) => {
   return ( <div className={props.classType}>
       <div className="inner-circle">
-        <img src={rock} alt="rock"/>
+        <img src={paper} alt="rock"/>
       </div>
     </div>);
 };
 
-export default  Rock;
+export default Paper;
