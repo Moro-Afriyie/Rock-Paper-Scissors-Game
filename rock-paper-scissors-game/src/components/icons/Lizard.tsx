@@ -6,7 +6,7 @@ const Lizard: React.FunctionComponent< ClassTypeProp> = (props) => {
   return ( <div 
     className={props.classType}
     style={{background: "linear-gradient(hsl(261, 73%, 60%) ,hsl(261, 72%, 63%)"
-     ,boxShadow: "0px 8px 1px -1px #8551e7"}}
+     ,boxShadow: "0px 7px 1px -1px #381181"}}
   >
       <div className="inner-circle">
         <img src={lizard} alt="rock"/>
