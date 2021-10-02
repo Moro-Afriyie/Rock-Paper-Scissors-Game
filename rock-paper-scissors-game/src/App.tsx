@@ -1,7 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Rock from './components/Rock';
+import Rock from './components/icons/Rock';
 
 function App() {
   return (
