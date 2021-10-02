@@ -6,14 +6,12 @@ body {
   display: flex;
 }
 .circle {
-  background-color: red;
   height: 110px;
   width: 123px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 8px 1px -1px #f70707f6;
   margin: 2rem auto;
 }
 .circle .inner-circle {
@@ -35,7 +33,6 @@ body {
 /******big circle*********/
 
 .circle-big {
-  background-color: red;
   /* height: 300px;
   width: 300px; */
   height: 200px;
@@ -45,7 +42,6 @@ body {
   align-items: center;
   justify-content: center;
   margin: 5rem auto;
-  box-shadow: 0px 12px 1px -1px #f70707f6;
 }
 .circle-big .inner-circle {
   background-color: white;
