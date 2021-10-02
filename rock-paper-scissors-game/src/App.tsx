@@ -7,13 +7,13 @@ import Spock from './components/icons/Spock';
 
 function App() {
   return (
-    <div className="App">
+    <main className="container">
      <Rock classType="circle" />
      <Paper classType="circle" />
      <Scissors classType="circle" />
      <Lizard classType="circle" />
      <Spock classType="circle" />
-    </div>
+    </main>
   );
 }
 
