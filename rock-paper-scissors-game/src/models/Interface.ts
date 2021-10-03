@@ -8,3 +8,6 @@ export interface  GamePageProps extends PentagonProps{
   iconSelected: string;
   setScore: React.Dispatch<React.SetStateAction<number>>;
 }
+export interface  ScoreProps {
+  score: number;
+}

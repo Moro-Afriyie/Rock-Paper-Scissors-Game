@@ -17,7 +17,7 @@ function App() {
  
   return (
     <main className="container">
-     <Score />
+     <Score score={score}/>
      {toggleDisplay?
      <GamePage 
      iconSelected={iconSelected}

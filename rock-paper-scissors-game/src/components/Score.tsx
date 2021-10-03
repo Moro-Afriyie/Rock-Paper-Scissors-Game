@@ -1,7 +1,5 @@
 import * as React from 'react';
-
-interface  ScoreProps {
-}
+import { ScoreProps } from '../models/interface';
 
 const Score: React.FunctionComponent< ScoreProps> = (props) => {
   return(<h1>Score</h1>) ;
