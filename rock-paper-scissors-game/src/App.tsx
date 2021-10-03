@@ -7,8 +7,8 @@ import Score from './components/Score';
 
 function App() {
   const [toggleDisplay, setToggleDisplay] = useState(false);
-  
   const [iconSelected, setIconSelected] = useState('');
+  const [score, setScore] = useState(0);
 
    const handleToggleDisplay= (value:boolean, icon:string):void =>{
     setToggleDisplay(value);
@@ -19,7 +19,10 @@ function App() {
     <main className="container">
      <Score />
      {toggleDisplay?
-     <GamePage iconSelected={iconSelected} /> 
+     <GamePage 
+     iconSelected={iconSelected}
+     handleToggleDisplay={handleToggleDisplay}
+     setScore={setScore} /> 
      : 
      <Pentagon handleToggleDisplay={handleToggleDisplay}/>}
     </main>
