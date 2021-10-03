@@ -6,7 +6,7 @@ const Score: React.FunctionComponent< ScoreProps> = ({score}) => {
   return(
   <section className="score-container">
       <div className="score-names">
-          <img src={logo} alt=""  />
+          <img src={logo} alt="rock,paper,scissors,lizard,spock logo"  />
       </div>
       <div className="score">
         <p>SCORE</p>
