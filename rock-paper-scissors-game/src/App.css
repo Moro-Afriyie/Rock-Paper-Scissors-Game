@@ -43,6 +43,7 @@ body {
   color: hsl(229, 64%, 46%);
   font-weight: 600;
   margin: 1rem 0 0 0;
+  letter-spacing: 0.2rem;
 }
 .score h1 {
   color: hsl(229, 25%, 31%);

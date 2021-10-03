@@ -9,7 +9,7 @@ const Score: React.FunctionComponent< ScoreProps> = (props) => {
           <img src={logo} alt=""  />
       </div>
       <div className="score">
-        <p>Score</p>
+        <p>SCORE</p>
         <h1>12</h1>
       </div>
   </section>) ;
