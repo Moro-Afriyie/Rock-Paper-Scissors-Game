@@ -5,3 +5,6 @@ export interface ClassTypeProp {
 export interface  PentagonProps {
     handleToggleDisplay: (value:boolean, icon:string)=>void;
 }
+export interface  GamePageProps {
+  iconSelected: string;
+}

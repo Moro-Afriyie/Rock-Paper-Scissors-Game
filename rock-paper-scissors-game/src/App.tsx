@@ -15,19 +15,18 @@ function App() {
 
    const handleToggleDisplay= (value:boolean, icon:string):void =>{
     setToggleDisplay(value);
-    setIconSelected(icon)
-    console.log({toggleDisplay, iconSelected});
+    setIconSelected(icon);
   }
 
-  useEffect(()=>{
-    handleToggleDisplay(toggleDisplay,iconSelected);
-  },[iconSelected, toggleDisplay]);
+  // useEffect(()=>{
+  //   handleToggleDisplay(toggleDisplay,iconSelected);
+  // },[iconSelected, toggleDisplay]);
  
   return (
     <main className="container">
      <Score />
      {toggleDisplay?
-     <GamePage /> 
+     <GamePage iconSelected={iconSelected} /> 
      : 
      <Pentagon handleToggleDisplay={handleToggleDisplay}/>}
     </main>

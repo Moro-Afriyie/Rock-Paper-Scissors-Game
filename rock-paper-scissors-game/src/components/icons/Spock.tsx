@@ -6,7 +6,7 @@ const Spock: React.FunctionComponent<ClassTypeProp> = (props) => {
   const {classType, handleToggleDisplay}= props;
   const handleToggle =()=>{
     if(handleToggleDisplay!== undefined){
-      handleToggleDisplay(false,"spock");
+      handleToggleDisplay(true,"spock");
     }
   }
   return ( <div

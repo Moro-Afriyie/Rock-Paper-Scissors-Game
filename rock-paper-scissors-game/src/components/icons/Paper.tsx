@@ -6,7 +6,7 @@ const Paper: React.FunctionComponent<ClassTypeProp> = (props) => {
   const {classType, handleToggleDisplay}= props;
   const handleToggle =()=>{
     if(handleToggleDisplay!== undefined){
-      handleToggleDisplay(false,"paper");
+      handleToggleDisplay(true,"paper");
     }
   }
   return ( <div 

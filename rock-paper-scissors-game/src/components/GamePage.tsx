@@ -1,10 +1,9 @@
 import * as React from 'react';
+import { GamePageProps } from '../models/interface';
 
-interface  GamePageProps {
-}
 
 const GamePage: React.FunctionComponent< GamePageProps> = (props) => {
-  return (<h1>GamePage</h1>) ;
+  return (<h1>{props.iconSelected}</h1>) ;
 };
 
 export default GamePage;

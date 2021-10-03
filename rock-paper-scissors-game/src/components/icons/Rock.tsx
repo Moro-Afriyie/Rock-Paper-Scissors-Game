@@ -6,7 +6,7 @@ const Rock: React.FC<ClassTypeProp> = (props) => {
   const {classType, handleToggleDisplay}= props;
   const handleToggle =()=>{
     if(handleToggleDisplay!== undefined){
-      handleToggleDisplay(false,"rock");
+      handleToggleDisplay(true,"rock");
     }
   }
   return ( <div 
