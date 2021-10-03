@@ -1,13 +1,12 @@
 import * as React from 'react';
+import { PentagonProps } from '../models/interface';
 import Lizard from './icons/Lizard';
 import Paper from './icons/Paper';
 import Rock from './icons/Rock';
 import Scissors from './icons/Scissors';
 import Spock from './icons/Spock';
 
-interface  PentagonProps {
-    handleToggleDisplay: (value:boolean)=>void;
-}
+
 
 const Pentagon: React.FunctionComponent< PentagonProps> = ({handleToggleDisplay}) => {
   return (
