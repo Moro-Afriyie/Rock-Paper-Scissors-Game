@@ -6,7 +6,7 @@ const Lizard: React.FunctionComponent< ClassTypeProp> = (props) => {
   const {classType, handleToggleDisplay}= props;
   const handleToggle =()=>{
     if(handleToggleDisplay!== undefined){
-      handleToggleDisplay(false,"lizard");
+      handleToggleDisplay(true,"lizard");
     }
   }
   return ( <div 
