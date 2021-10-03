@@ -6,16 +6,17 @@ import Scissors from './icons/Scissors';
 import Spock from './icons/Spock';
 
 interface  PentagonProps {
+    handleToggleDisplay: (value:boolean)=>void;
 }
 
-const Pentagon: React.FunctionComponent< PentagonProps> = (props) => {
+const Pentagon: React.FunctionComponent< PentagonProps> = ({handleToggleDisplay}) => {
   return (
     <section className="pentagon-container">
-        <Rock classType="circle" />
-        <Paper classType="circle" />
-        <Scissors classType="circle" />
-        <Lizard classType="circle" />
-        <Spock classType="circle" />
+        <Rock classType="circle" handleToggleDisplay={handleToggleDisplay}/>
+        <Paper classType="circle" handleToggleDisplay={handleToggleDisplay}/>
+        <Scissors classType="circle" handleToggleDisplay={handleToggleDisplay}/>
+        <Lizard classType="circle" handleToggleDisplay={handleToggleDisplay}/>
+        <Spock classType="circle" handleToggleDisplay={handleToggleDisplay} />
      </section>
      );
 };

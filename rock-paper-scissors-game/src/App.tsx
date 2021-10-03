@@ -11,15 +11,18 @@ import Score from './components/Score';
 
 function App() {
   const [toggleDisplay, setToggleDisplay] = useState(false);
+
+  const handleToggleDisplay= (value:boolean):void =>{
+    setToggleDisplay(value);
+    console.log({toggleDisplay});
+  }
   return (
     <main className="container">
-     {/* <Rock classType="circle" />
-     <Paper classType="circle" />
-     <Scissors classType="circle" />
-     <Lizard classType="circle" />
-     <Spock classType="circle" /> */}
      <Score />
-     {toggleDisplay?<GamePage /> : <Pentagon />}
+     {toggleDisplay?
+     <GamePage /> 
+     : 
+     <Pentagon handleToggleDisplay={handleToggleDisplay}/>}
     </main>
   );
 }
