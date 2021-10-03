@@ -11,9 +11,11 @@ import Score from './components/Score';
 
 function App() {
   const [toggleDisplay, setToggleDisplay] = useState(false);
+  const [iconSelected, setIconSelected] = useState('');
 
-  const handleToggleDisplay= (value:boolean):void =>{
+  const handleToggleDisplay= (value:boolean, icon:string):void =>{
     setToggleDisplay(value);
+    setIconSelected(icon)
     console.log({toggleDisplay});
   }
   return (
