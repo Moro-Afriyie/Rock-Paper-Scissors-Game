@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import GamePage from './components/GamePage';
 import Pentagon from './components/Pentagon';
@@ -13,11 +13,16 @@ function App() {
   const [toggleDisplay, setToggleDisplay] = useState(false);
   const [iconSelected, setIconSelected] = useState('');
 
-  const handleToggleDisplay= (value:boolean, icon:string):void =>{
+   const handleToggleDisplay= (value:boolean, icon:string):void =>{
     setToggleDisplay(value);
     setIconSelected(icon)
-    console.log({toggleDisplay});
+    console.log({toggleDisplay, iconSelected});
   }
+
+  useEffect(()=>{
+    handleToggleDisplay(toggleDisplay,iconSelected);
+  },[iconSelected, toggleDisplay]);
+ 
   return (
     <main className="container">
      <Score />
