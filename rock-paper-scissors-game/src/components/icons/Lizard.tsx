@@ -11,8 +11,6 @@ const Lizard: React.FunctionComponent< ClassTypeProp> = (props) => {
   }
   return ( <div 
     className={classType}
-    style={{background: "linear-gradient(hsl(261, 73%, 60%) ,hsl(261, 72%, 63%)"
-     ,boxShadow: "0px 7px 1px -1px #381181"}}
      onClick={handleToggle}
   >
       <div className="inner-circle">

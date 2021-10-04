@@ -11,8 +11,6 @@ const Scissors: React.FunctionComponent<ClassTypeProp> = (props) => {
   }
    return ( <div 
     className={classType}
-   style={{background: "linear-gradient(hsl(39, 89%, 49%) ,hsl(40, 84%, 53%)"
-   ,boxShadow: "0px 7px 1px -1px #805505"}}
    onClick={handleToggle}>
       <div className="inner-circle">
         <img src={scissors} alt="rock"/>
