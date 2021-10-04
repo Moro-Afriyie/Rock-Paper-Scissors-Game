@@ -7,10 +7,12 @@ import Rock from './icons/Rock';
 import Scissors from './icons/Scissors';
 import Spock from './icons/Spock';
 
+const options:string[] = ["rock","paper","scissors","lizard","spock"];
 
 const GamePage: React.FunctionComponent< GamePageProps> = (props) => {
   const [control, setControl] = useState(false);
   const [isActive, setIsActive] = useState(true);
+  const [computerIcon, setComputerIcon] = useState(""); //computerIcon
 
   const chooseIcon =(value: string)=>{
     if(value ==="rock"){
@@ -50,7 +52,7 @@ const GamePage: React.FunctionComponent< GamePageProps> = (props) => {
         <h3>THE HOUSE PICKED</h3>
         <div className={isActive?"default active": "default"}>
           <div>
-          {chooseIcon("")}
+          {chooseIcon(computerIcon)}
           </div>
         </div> 
       </div>
