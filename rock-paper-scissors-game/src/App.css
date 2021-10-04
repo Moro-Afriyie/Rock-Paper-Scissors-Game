@@ -22,7 +22,7 @@ body {
   border: 3px solid hsl(217, 16%, 45%);
   margin: 1rem 0;
   display: flex;
-  width: 90%;
+  width: 85%;
   padding: 1rem 1rem 0.8rem 1.5rem;
   border-radius: 20px;
 }
@@ -185,5 +185,28 @@ body {
 }
 .game-container > * {
   flex-basis: 100%;
+}
+.player-side,
+.computer-side {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.game-container h3 {
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+.game-container h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+.game-container .controls button {
+  height: 2.5rem;
+  width: 11rem;
+  border: none;
+  border-radius: 6px;
+  letter-spacing: 0.1rem;
+  background: #ffffff;
+  margin-top: 0.7rem;
 }
 /**********GAME PAGE *******/
