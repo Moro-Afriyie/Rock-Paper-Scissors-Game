@@ -5,17 +5,19 @@ import Paper from './icons/Paper';
 import Rock from './icons/Rock';
 import Scissors from './icons/Scissors';
 import Spock from './icons/Spock';
+import pentagon from '../images/bg-pentagon.svg';
 
 
 
 const Pentagon: React.FunctionComponent< PentagonProps> = ({handleToggleDisplay}) => {
   return (
     <section className="pentagon-container">
-        <Rock classType="circle" handleToggleDisplay={handleToggleDisplay}/>
-        <Paper classType="circle" handleToggleDisplay={handleToggleDisplay}/>
-        <Scissors classType="circle" handleToggleDisplay={handleToggleDisplay}/>
-        <Lizard classType="circle" handleToggleDisplay={handleToggleDisplay}/>
-        <Spock classType="circle" handleToggleDisplay={handleToggleDisplay} />
+        {/* <img src={pentagon} alt="pentagon" /> */}
+        <Rock classType="circle rock" handleToggleDisplay={handleToggleDisplay}/>
+        <Paper classType="circle paper" handleToggleDisplay={handleToggleDisplay}/>
+        <Scissors classType="circle scissors" handleToggleDisplay={handleToggleDisplay}/>
+        <Lizard classType="circle lizard" handleToggleDisplay={handleToggleDisplay}/>
+        <Spock classType="circle spock" handleToggleDisplay={handleToggleDisplay} />
      </section>
      );
 };

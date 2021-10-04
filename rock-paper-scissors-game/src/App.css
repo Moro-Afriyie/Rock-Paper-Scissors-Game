@@ -52,6 +52,52 @@ body {
 }
 /********SCORE***********/
 
+/**********PENTAGON***********/
+.pentagon-container {
+  width: 90%;
+  border: 1px solid blue;
+  background: url("./images/bg-pentagon.svg");
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-position: center;
+  position: relative;
+  height: 28rem;
+}
+.paper {
+  position: absolute;
+  /* left: 25rem;
+  top: 8rem; */
+  top: 28%;
+  left: 62%;
+}
+.scissors {
+  position: absolute;
+  /* left: 16rem;
+  top: 2rem; */
+  top: 8%;
+  left: 40%;
+}
+.spock {
+  position: absolute;
+  /* top: 8rem;
+  left: 7rem; */
+  top: 28%;
+  left: 18%;
+}
+.lizard {
+  position: absolute;
+  /* left: 11rem;
+  top: 19rem; */
+  top: 67%;
+  left: 26%;
+}
+.rock {
+  position: absolute;
+  /* top: 19rem;
+  left: 22rem; */
+  top: 67%;
+  left: 55%;
+}
 .circle {
   height: 110px;
   width: 123px;
@@ -59,7 +105,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2rem auto;
+  /* margin: 2rem auto; */
   cursor: pointer;
 }
 .circle .inner-circle {
