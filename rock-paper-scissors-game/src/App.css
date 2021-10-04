@@ -55,7 +55,6 @@ body {
 /**********PENTAGON***********/
 .pentagon-container {
   width: 90%;
-  border: 1px solid blue;
   background: url("./images/bg-pentagon.svg");
   background-repeat: no-repeat;
   /* background-size: contain; */
@@ -66,6 +65,8 @@ body {
 .paper {
   background: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
   box-shadow: 0px 7px 1px -1px #1933b9;
+}
+.pentagon-container .paper {
   position: absolute;
   /* left: 25rem;
   top: 8rem; */
@@ -75,6 +76,8 @@ body {
 .scissors {
   background: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
   box-shadow: 0px 7px 1px -1px #805505;
+}
+.pentagon-container .scissors {
   position: absolute;
   /* left: 16rem;
   top: 2rem; */
@@ -84,6 +87,8 @@ body {
 .spock {
   background: linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
   box-shadow: 0px 7px 1px -1px #0e606e;
+}
+.pentagon-container .spock {
   position: absolute;
   /* top: 8rem;
   left: 7rem; */
@@ -93,6 +98,8 @@ body {
 .lizard {
   background: linear-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%));
   box-shadow: 0px 7px 1px -1px #381181;
+}
+.pentagon-container .lizard {
   position: absolute;
   /* left: 11rem;
   top: 19rem; */
@@ -102,12 +109,15 @@ body {
 .rock {
   background: linear-gradient(#de3f5c, #da2f4e);
   box-shadow: 0px 7px 1px -1px #971930;
+}
+.pentagon-container .rock {
   position: absolute;
   /* top: 19rem;
   left: 22rem; */
   top: 67%;
   left: 55%;
 }
+/**********PENTAGON***********/
 .circle {
   height: 110px;
   width: 123px;
