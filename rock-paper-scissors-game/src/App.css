@@ -183,15 +183,18 @@ body {
   text-align: center;
   align-items: center;
 }
-.game-container > * {
+/* .game-container > * {
   flex-basis: 100%;
-}
+} */
 .player-side,
 .computer-side {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
+/* .computer-side {
+  margin-left: auto;
+} */
 .game-container h3 {
   color: #ffffff;
   font-size: 1.4rem;
@@ -210,5 +213,12 @@ body {
   margin-top: 0.7rem;
   font-weight: 600;
   color: hsl(229, 25%, 31%);
+  flex-basis: 100%;
+}
+.default {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: hsl(237, 49%, 15%);
 }
 /**********GAME PAGE *******/
