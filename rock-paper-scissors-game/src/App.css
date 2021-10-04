@@ -177,7 +177,7 @@ body {
 .game-container {
   display: flex;
   width: 100%;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   height: 25rem;
   /* margin-top: 2rem; */
   text-align: center;
