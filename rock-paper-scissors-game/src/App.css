@@ -203,6 +203,9 @@ body {
   font-size: 2.5rem;
   color: #ffffff;
 }
+.controls {
+  flex-basis: 100%;
+}
 .game-container .controls button {
   height: 2.5rem;
   width: 11rem;
