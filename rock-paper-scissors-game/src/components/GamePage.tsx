@@ -9,7 +9,8 @@ import Spock from './icons/Spock';
 
 
 const GamePage: React.FunctionComponent< GamePageProps> = (props) => {
-  const [control, setControl] = useState(false);
+  const [control, setControl] = useState(true);
+  const [isActive, setIsActive] = useState(true);
 
   const chooseIcon =(value: string)=>{
     if(value ==="rock"){
@@ -34,7 +35,9 @@ const GamePage: React.FunctionComponent< GamePageProps> = (props) => {
       <div className="player-side">
         <h3>YOU PICKED</h3>
         {/* {chooseIcon(props.iconSelected)} */}
-    <Rock classType="circle-big rock" />
+        <div>
+            <Rock classType="circle-big rock" />
+        </div>
       </div>
       {control && <div className="controls">
         <h1>YOU LOSE</h1>
@@ -42,9 +45,12 @@ const GamePage: React.FunctionComponent< GamePageProps> = (props) => {
       </div>}
       <div className="computer-side" style={control?{marginLeft:"auto"}:{marginLeft:"0"}}>
         <h3>THE HOUSE PICKED</h3>
-        {control?chooseIcon("rock"):
-        <div className="default">
-        </div> }
+        {/* {control?chooseIcon("rock"): */}
+        <div className={isActive?"default active": "default"}>
+          <div>
+          {chooseIcon("rock")}
+          </div>
+        </div> 
       </div>
         
      </section>
