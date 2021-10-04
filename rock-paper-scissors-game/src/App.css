@@ -173,3 +173,17 @@ body {
 .circle-big .inner-circle img {
   height: 90px;
 }
+/**********GAME PAGE *******/
+.game-container {
+  display: flex;
+  width: 100%;
+  border: 1px solid blue;
+  height: 25rem;
+  margin-top: 2rem;
+  text-align: center;
+  align-items: center;
+}
+.game-container > * {
+  flex-basis: 100%;
+}
+/**********GAME PAGE *******/

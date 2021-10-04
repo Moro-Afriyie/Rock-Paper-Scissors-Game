@@ -19,7 +19,8 @@ const GamePage: React.FunctionComponent< GamePageProps> = (props) => {
         <Spock classType="circle-big spock"  /> */}
       </div>
       <div className="controls">
-        <h1>control</h1>
+        <h1>YOU LOSE</h1>
+        <button>PLAY AGAIN</button>
       </div>
       <div className="computer-side">
         <h3>THE HOUSE PICKED</h3>
