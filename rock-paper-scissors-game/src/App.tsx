@@ -6,7 +6,7 @@ import Score from './components/Score';
 
 
 function App() {
-  const [toggleDisplay, setToggleDisplay] = useState(true);
+  const [toggleDisplay, setToggleDisplay] = useState(false);
   const [iconSelected, setIconSelected] = useState('');
   const [score, setScore] = useState(0);
 
