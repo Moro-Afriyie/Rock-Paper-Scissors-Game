@@ -27,18 +27,14 @@ const GamePage: React.FunctionComponent< GamePageProps> = (props) => {
     else if(value==="spock"){
       return <Spock classType="circle-big spock"  />
     }
-
   }
+  
   return (
     <section className="game-container" style={!control?{justifyContent:"center",gap:"6rem"}:{}}>
       <div className="player-side">
         <h3>YOU PICKED</h3>
-        {chooseIcon(props.iconSelected)}
-    {/* <Rock classType="circle-big rock" /> */}
-        {/* <Paper classType="circle-big paper" />
-        <Scissors classType="circle-big scissors" />
-        <Lizard classType="circle-big lizard" />
-        <Spock classType="circle-big spock"  /> */}
+        {/* {chooseIcon(props.iconSelected)} */}
+    <Rock classType="circle-big rock" />
       </div>
       {control && <div className="controls">
         <h1>YOU LOSE</h1>
@@ -46,7 +42,7 @@ const GamePage: React.FunctionComponent< GamePageProps> = (props) => {
       </div>}
       <div className="computer-side" style={control?{marginLeft:"auto"}:{marginLeft:"0"}}>
         <h3>THE HOUSE PICKED</h3>
-        {control?chooseIcon(props.iconSelected):
+        {control?chooseIcon("rock"):
         <div className="default">
         </div> }
       </div>

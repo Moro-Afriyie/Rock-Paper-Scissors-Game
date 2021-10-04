@@ -203,7 +203,7 @@ body {
   font-size: 2.5rem;
   color: #ffffff;
 }
-.controls {
+.game-container .controls {
   flex-basis: 100%;
 }
 .game-container .controls button {
