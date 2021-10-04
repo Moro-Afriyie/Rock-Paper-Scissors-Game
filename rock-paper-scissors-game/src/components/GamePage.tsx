@@ -35,7 +35,10 @@ const GamePage: React.FunctionComponent< GamePageProps> = (props) => {
       <div className="player-side">
         <h3>YOU PICKED</h3>
         {/* {chooseIcon(props.iconSelected)} */}
-        <div>
+        {/* <div>
+            <Rock classType="circle-big rock" />
+        </div> */}
+         <div className="effect-left">
             <Rock classType="circle-big rock" />
         </div>
       </div>
