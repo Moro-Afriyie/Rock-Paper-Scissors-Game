@@ -5,7 +5,7 @@ export interface  PentagonProps {
     handleToggleDisplay?: (value:boolean, icon:string)=>void;
 }
 export interface  GamePageProps extends PentagonProps{
-  iconSelected: string;
+  playerIcon: string;
   setScore: React.Dispatch<React.SetStateAction<number>>;
 }
 export interface  ScoreProps {
