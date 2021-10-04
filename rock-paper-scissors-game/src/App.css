@@ -155,7 +155,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 5rem auto;
+  /* margin: 5rem auto; */
 }
 .circle-big .inner-circle {
   background-color: white;
