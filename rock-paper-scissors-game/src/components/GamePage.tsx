@@ -10,6 +10,10 @@ import Spock from './icons/Spock';
 
 const GamePage: React.FunctionComponent< GamePageProps> = (props) => {
   const [control, setControl] = useState(false);
+
+  const chooseIcon =(value: string)=>{
+    
+  }
   return (
     <section className="game-container" style={!control?{justifyContent:"center",gap:"6rem"}:{}}>
       <div className="player-side">
