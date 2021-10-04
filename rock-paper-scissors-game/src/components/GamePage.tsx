@@ -32,6 +32,8 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
       return <Spock classType="circle-big spock" />
     }
   }
+
+  // will implement the game logic here
   const handleScore = (player:string, computer:string)=>{
     if(player==="rock"&& computer==="scissors"){
       setControl(true);
@@ -59,6 +61,13 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
     return clearTimeout();
   },[]);
 
+  const handlePlay=()=>{
+    if(handleToggleDisplay !== undefined){
+    handleToggleDisplay(false,"");
+    setIsActive(false);
+    setControl(false);
+  }
+  }
   return (
     <section className="game-container" style={!control ? { justifyContent: "center", gap: "6rem" } : {}}>
       <div className="player-side">
@@ -72,7 +81,7 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
       </div>
       {control && <div className="controls">
         <h1>YOU LOSE</h1>
-        <button>PLAY AGAIN</button>
+        <button onClick={handlePlay}>PLAY AGAIN</button>
       </div>}
       <div className="computer-side" style={control ? { marginLeft: "auto" } : { marginLeft: "0" }}>
         <h3>THE HOUSE PICKED</h3>

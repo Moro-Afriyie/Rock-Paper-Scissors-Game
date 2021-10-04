@@ -216,6 +216,7 @@ body {
   font-weight: 600;
   color: hsl(229, 25%, 31%);
   flex-basis: 100%;
+  cursor: pointer;
 }
 .default {
   height: 200px;
