@@ -14,6 +14,7 @@ function App() {
   const [playerIcon, setPlayerIcon] = useState('');
   const [score, setScore] = useState(0);
   const [computerIcon, setComputerIcon] = useState(""); //computerIcon
+  const [modalIsOpen, setModalIsOpen] = useState(true);
 
    const handleToggleDisplay= (value:boolean, icon:string):void =>{
     let num = Math.floor(Math.random()*options.length);
@@ -36,6 +37,10 @@ function App() {
      : 
      <Pentagon handleToggleDisplay={handleToggleDisplay}/>}
     </section>
+    <Modal
+    isOpen={modalIsOpen}>
+
+    </Modal>
     <footer className="footer">
         <button>RULES</button>
       <div className="attribution">
