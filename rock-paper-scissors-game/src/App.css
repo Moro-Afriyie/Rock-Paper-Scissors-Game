@@ -275,7 +275,9 @@ body {
 
 /************FOOTER******************/
 .footer {
-  border: 1px solid green;
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
 }
 .attribution {
   font-size: 15px;
@@ -288,7 +290,14 @@ body {
   border: 2px solid hsl(217, 16%, 45%);
   outline: none;
   background: transparent;
-  padding: 1rem;
+  padding: 0.5rem;
   float: right;
-  border-radius: 5px;
+  border-radius: 8px;
+  color: #bcc0c7;
+  width: 7rem;
+  align-self: flex-end;
+  margin-right: 1rem;
+  letter-spacing: 0.2rem;
+  margin-right: 1rem;
+  cursor: pointer;
 }
