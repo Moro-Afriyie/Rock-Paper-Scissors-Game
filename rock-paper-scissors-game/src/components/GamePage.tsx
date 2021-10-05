@@ -50,7 +50,7 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
   const updateScore = (status:string)=>{
         setControl(true);
         setStatus(status);
-        if(status === "YOU WIN"){
+        if(status === "you win"){
             setTimeout(()=>{
           setScore(prev=> prev+1);
         },300);
@@ -75,37 +75,37 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
     Spock beats Rock
    */
   if(player === "scissors" && computer === "paper"){
-    console.log("you win");
+    updateScore("you win");
   }
   else if(player === "paper" && computer === "rock"){
-    console.log("you win");
+    updateScore("you win");
   }
    else if(player === "lizard" && computer === "spock"){
-    console.log("you win");
+    updateScore("you win");
   }
    else if(player === "rock" && computer === "lizard"){
-    console.log("you win");
+    updateScore("you win");
   }
    else if(player === "spock" && computer === "scissors"){
-    console.log("you win");
+    updateScore("you win");
   }
    else if(player === "scissors" && computer === "lizard"){
-    console.log("you win");
+    updateScore("you win");
   }
    else if(player === "paper" && computer === "spock"){
-    console.log("you win");
+    updateScore("you win");
   }
    else if(player === "rock" && computer === "scissors"){
-    console.log("you win");
+    updateScore("you win");
   }
    else if(player === "lizard" && computer === "paper"){
-    console.log("you win");
+    updateScore("you win");
   }
    else if(player === "spock" && computer === "rock"){
-    console.log("you win");
+    updateScore("you win");
   }
   else{
-
+    updateScore("you lose");
   }
   }
   useEffect(()=>{
