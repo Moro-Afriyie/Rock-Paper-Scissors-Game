@@ -4,13 +4,17 @@ import GamePage from './components/GamePage';
 import Pentagon from './components/Pentagon';
 import Score from './components/Score';
 
+const options: string[] = ["rock", "paper", "scissors", "lizard", "spock"];
 
 function App() {
   const [toggleDisplay, setToggleDisplay] = useState(false);
   const [playerIcon, setPlayerIcon] = useState('');
   const [score, setScore] = useState(0);
+  const [computerIcon, setComputerIcon] = useState(""); //computerIcon
 
    const handleToggleDisplay= (value:boolean, icon:string):void =>{
+    let num = Math.floor(Math.random()*options.length);
+    setComputerIcon(options[num]);
     setToggleDisplay(value);
     setPlayerIcon(icon);
   }
@@ -22,7 +26,9 @@ function App() {
      <GamePage 
      playerIcon={playerIcon}
      handleToggleDisplay={handleToggleDisplay}
-     setScore={setScore} /> 
+     setScore={setScore}
+     computerIcon ={computerIcon}
+      /> 
      : 
      <Pentagon handleToggleDisplay={handleToggleDisplay}/>}
     </main>

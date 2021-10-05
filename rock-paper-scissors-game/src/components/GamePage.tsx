@@ -7,13 +7,11 @@ import Rock from './icons/Rock';
 import Scissors from './icons/Scissors';
 import Spock from './icons/Spock';
 
-const options: string[] = ["rock", "paper", "scissors", "lizard", "spock"];
 
 const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
-  const { playerIcon, handleToggleDisplay, setScore } = props;
+  const { playerIcon, computerIcon, handleToggleDisplay, setScore } = props;
   const [control, setControl] = useState(false);
   const [isActive, setIsActive] = useState(false);
-  const [computerIcon, setComputerIcon] = useState(""); //computerIcon
   const [status, setStatus] = useState("");
 
   const chooseIcon = (value: string) => {
@@ -74,6 +72,7 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
     Lizard beats Paper
     Spock beats Rock
    */
+  console.log({player, computer});
   if(player === "scissors" && computer === "paper"){
     updateScore("you win");
   }
@@ -109,10 +108,10 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
   }
   }
   useEffect(()=>{
-    let num = Math.floor(Math.random()*options.length);
+    // let num = Math.floor(Math.random()*options.length);
     setTimeout(()=>{
       setIsActive(true);
-      setComputerIcon(options[num]);
+      // setComputerIcon(options[num]);
           setTimeout(()=>{
       handleScore(playerIcon, computerIcon);
     },2000);

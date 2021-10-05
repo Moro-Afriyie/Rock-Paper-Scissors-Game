@@ -204,6 +204,7 @@ body {
 }
 .game-container .controls {
   flex-basis: 100%;
+  text-transform: uppercase;
 }
 .game-container .controls button {
   height: 2.5rem;
