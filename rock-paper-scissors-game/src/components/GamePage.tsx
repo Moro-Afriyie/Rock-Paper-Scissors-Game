@@ -33,18 +33,6 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
   }
 
   // will implement the game logic here
-  /**
-    Scissors beats Paper
-    Paper beats Rock
-    Rock beats Lizard
-    Lizard beats Spock
-    Spock beats Scissors
-    Scissors beats Lizard
-    Paper beats Spock
-    Rock beats Scissors
-    Lizard beats Paper
-    Spock beats Rock
-   */
   const updateScore = (status:string)=>{
         setControl(true);
         setStatus(status);
@@ -72,7 +60,6 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
     Lizard beats Paper
     Spock beats Rock
    */
-  console.log({player, computer});
   if(player === "scissors" && computer === "paper"){
     updateScore("you win");
   }
@@ -108,10 +95,9 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
   }
   }
   useEffect(()=>{
-    // let num = Math.floor(Math.random()*options.length);
+   console.log({playerIcon, computerIcon});
     setTimeout(()=>{
       setIsActive(true);
-      // setComputerIcon(options[num]);
           setTimeout(()=>{
       handleScore(playerIcon, computerIcon);
     },2000);

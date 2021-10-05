@@ -4,7 +4,7 @@ import GamePage from './components/GamePage';
 import Pentagon from './components/Pentagon';
 import Score from './components/Score';
 
-const options: string[] = ["rock", "paper", "scissors", "lizard", "spock"];
+const options: string[] = ["scissors", "spock","paper","rock","lizard"];
 
 function App() {
   const [toggleDisplay, setToggleDisplay] = useState(false);
