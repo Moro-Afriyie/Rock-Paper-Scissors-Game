@@ -14,6 +14,7 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
   const [control, setControl] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const [computerIcon, setComputerIcon] = useState(""); //computerIcon
+  const [status, setStatus] = useState("");
 
   const chooseIcon = (value: string) => {
     if (value === "rock") {
@@ -46,25 +47,21 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
     Lizard beats Paper
     Spock beats Rock
    */
-  const updateScore = ()=>{
+  const updateScore = (status:string)=>{
         setControl(true);
-        setTimeout(()=>{
-        setScore(prev=> prev+1);
-      },300);
+        setStatus(status);
+        if(status === "YOU WIN"){
+            setTimeout(()=>{
+          setScore(prev=> prev+1);
+        },300);
+        }
+        else{
+          setTimeout(()=>{
+          setScore(prev=> prev-1);
+        },300);
+        } 
   }
   const handleScore = (player:string, computer:string)=>{
-  //   if(player==="rock"&& computer==="scissors"){
-  //     setControl(true);
-  //     setTimeout(()=>{
-  // setScore(prev=> prev+1);
-  //     },300)
-  //   }
-  //   else{
-  //     setControl(true);
-  //     setTimeout(()=>{
-  // setScore(prev=> prev+1);
-  //     },300)
-  //   }
   /**
     Scissors beats Paper
     Paper beats Rock
@@ -143,7 +140,7 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
         </div> */}
       </div>
       {control && <div className="controls">
-        <h1>YOU LOSE</h1>
+        <h1>{status}</h1>
         <button onClick={handlePlay}>PLAY AGAIN</button>
       </div>}
       <div className="computer-side" style={control ? { marginLeft: "auto" } : { marginLeft: "0" }}>
