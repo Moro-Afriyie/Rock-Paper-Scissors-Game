@@ -12,7 +12,7 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
   const { playerIcon, computerIcon, handleToggleDisplay, setScore } = props;
   const [control, setControl] = useState(false);
   const [isActive, setIsActive] = useState(false);
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState<string | null>(null);
 
   const chooseIcon = (value: string) => {
     if (value === "rock") {
