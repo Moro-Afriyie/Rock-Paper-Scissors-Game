@@ -60,7 +60,7 @@ body {
   /* background-size: contain; */
   background-position: center;
   position: relative;
-  height: 28rem;
+  height: 26rem;
 }
 .paper {
   background: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
