@@ -34,6 +34,18 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
   }
 
   // will implement the game logic here
+  /**
+    Scissors beats Paper
+    Paper beats Rock
+    Rock beats Lizard
+    Lizard beats Spock
+    Spock beats Scissors
+    Scissors beats Lizard
+    Paper beats Spock
+    Rock beats Scissors
+    Lizard beats Paper
+    Spock beats Rock
+   */
   const handleScore = (player:string, computer:string)=>{
     if(player==="rock"&& computer==="scissors"){
       setControl(true);
