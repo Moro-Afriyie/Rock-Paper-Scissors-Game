@@ -3,6 +3,9 @@ import './App.css';
 import GamePage from './components/GamePage';
 import Pentagon from './components/Pentagon';
 import Score from './components/Score';
+import Modal from 'react-modal';
+
+Modal.setAppElement('#root');
 
 const options: string[] = ["scissors", "spock","paper","rock","lizard"];
 
@@ -34,9 +37,7 @@ function App() {
      <Pentagon handleToggleDisplay={handleToggleDisplay}/>}
     </section>
     <footer className="footer">
-      <div className="rules-modal">
         <button>RULES</button>
-      </div>
       <div className="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>. 
         Coded by <a href="#">Moro Owusu Afriyie</a>.

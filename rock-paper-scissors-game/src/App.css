@@ -278,9 +278,17 @@ body {
   border: 1px solid green;
 }
 .attribution {
-  font-size: 11px;
+  font-size: 15px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+.footer button {
+  border: 2px solid hsl(217, 16%, 45%);
+  outline: none;
+  background: transparent;
+  padding: 1rem;
+  float: right;
+  border-radius: 5px;
 }
