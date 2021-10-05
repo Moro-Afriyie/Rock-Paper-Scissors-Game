@@ -20,7 +20,8 @@ function App() {
   }
  
   return (
-    <main className="container">
+  <main className="App">
+    <section className="container">
      <Score score={score}/>
      {toggleDisplay?
      <GamePage 
@@ -31,7 +32,17 @@ function App() {
       /> 
      : 
      <Pentagon handleToggleDisplay={handleToggleDisplay}/>}
-    </main>
+    </section>
+    <footer className="footer">
+      <div className="rules-modal">
+        <button>RULES</button>
+      </div>
+      <div className="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>. 
+        Coded by <a href="#">Moro Owusu Afriyie</a>.
+      </div>
+    </footer>
+  </main>
   );
 }
 

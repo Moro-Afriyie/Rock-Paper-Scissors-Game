@@ -272,3 +272,15 @@ body {
   opacity: 1;
   animation: rotation 1s backwards;
 }
+
+/************FOOTER******************/
+.footer {
+  border: 1px solid green;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
