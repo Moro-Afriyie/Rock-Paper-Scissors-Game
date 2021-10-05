@@ -46,19 +46,70 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
     Lizard beats Paper
     Spock beats Rock
    */
+  const updateScore = ()=>{
+        setControl(true);
+        setTimeout(()=>{
+        setScore(prev=> prev+1);
+      },300);
+  }
   const handleScore = (player:string, computer:string)=>{
-    if(player==="rock"&& computer==="scissors"){
-      setControl(true);
-      setTimeout(()=>{
-  setScore(prev=> prev+1);
-      },300)
-    }
-    else{
-      setControl(true);
-      setTimeout(()=>{
-  setScore(prev=> prev+1);
-      },300)
-    }
+  //   if(player==="rock"&& computer==="scissors"){
+  //     setControl(true);
+  //     setTimeout(()=>{
+  // setScore(prev=> prev+1);
+  //     },300)
+  //   }
+  //   else{
+  //     setControl(true);
+  //     setTimeout(()=>{
+  // setScore(prev=> prev+1);
+  //     },300)
+  //   }
+  /**
+    Scissors beats Paper
+    Paper beats Rock
+    Rock beats Lizard
+    Lizard beats Spock
+    Spock beats Scissors
+    Scissors beats Lizard
+    Paper beats Spock
+    Rock beats Scissors
+    Lizard beats Paper
+    Spock beats Rock
+   */
+  if(player === "scissors" && computer === "paper"){
+    console.log("you win");
+  }
+  else if(player === "paper" && computer === "rock"){
+    console.log("you win");
+  }
+   else if(player === "lizard" && computer === "spock"){
+    console.log("you win");
+  }
+   else if(player === "rock" && computer === "lizard"){
+    console.log("you win");
+  }
+   else if(player === "spock" && computer === "scissors"){
+    console.log("you win");
+  }
+   else if(player === "scissors" && computer === "lizard"){
+    console.log("you win");
+  }
+   else if(player === "paper" && computer === "spock"){
+    console.log("you win");
+  }
+   else if(player === "rock" && computer === "scissors"){
+    console.log("you win");
+  }
+   else if(player === "lizard" && computer === "paper"){
+    console.log("you win");
+  }
+   else if(player === "spock" && computer === "rock"){
+    console.log("you win");
+  }
+  else{
+
+  }
   }
   useEffect(()=>{
     let num = Math.floor(Math.random()*options.length);
