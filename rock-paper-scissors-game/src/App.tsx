@@ -30,7 +30,7 @@ function App() {
 
   const handleChange = (toggle:boolean)=>{
     setToggle(toggle);
-    console.log(toggle);
+    setScore(0);
   }
  
   return (
