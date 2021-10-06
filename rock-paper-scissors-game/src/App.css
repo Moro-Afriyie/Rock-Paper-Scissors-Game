@@ -332,14 +332,6 @@ body {
 .ReactModal__Overlay--before-close {
   opacity: 0;
 }
-/* .controls,
-.computer-side h3,
-.player-side h3 {
-  z-index: 1;
-} */
-/* Modal {
-  z-index: 3;
-} */
 
 .player-win,
 .computer-win {
@@ -350,7 +342,32 @@ body {
   box-shadow: 0px 0px 0px 50px hsl(214deg 47% 23% / 80%),
     0px 0px 0px 110px hsl(214deg 47% 23% / 60%),
     0px 0px 0px 160px hsl(214deg 47% 23% / 40%);
+  z-index: -1;
 }
 
 /**668px****/
 /***I will use the mobile styling****/
+@media screen and (max-width: 670px) {
+  html {
+    font-size: 12px;
+  }
+  .circle {
+    height: 90px;
+    width: 95px;
+  }
+  .circle .inner-circle {
+    width: 74px;
+    height: 70px;
+  }
+  .circle .inner-circle img {
+    height: 40px;
+  }
+  .footer {
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .footer button {
+    align-self: center;
+  }
+}
