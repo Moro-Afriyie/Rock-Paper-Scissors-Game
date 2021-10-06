@@ -58,6 +58,10 @@ body {
   gap: 10px;
   margin: 1rem 0;
 }
+.container label span {
+  text-transform: uppercase;
+  color: #ffffff;
+}
 /**********PENTAGON***********/
 .pentagon-container,
 .triangle-container {

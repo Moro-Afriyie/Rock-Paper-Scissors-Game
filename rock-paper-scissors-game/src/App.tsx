@@ -39,7 +39,7 @@ function App() {
      <Score score={score}/>
      {/* toggle switch component */}
      <label htmlFor="material-switch">
-          <span>Switch with style inspired by Material Design</span>
+          <span>easy</span>
           <Switch
             checked={toggle}
             onChange={handleChange}
@@ -55,6 +55,7 @@ function App() {
             className="react-switch"
             id="material-switch"
           />
+          <span>hard</span>
         </label>
       {/* toggle switch component */}
      {toggleDisplay?
