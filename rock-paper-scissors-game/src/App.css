@@ -12,7 +12,7 @@ body {
   max-width: 45rem;
   width: 100%;
   border: 1px solid red;
-  margin: 1rem auto;
+  margin: 0.3rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,23 +51,30 @@ body {
   font-weight: 700;
 }
 /********SCORE***********/
-
+.container label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 1rem 0;
+}
 /**********PENTAGON***********/
 .pentagon-container,
 .triangle-container {
   width: 90%;
   position: relative;
-  height: 25rem;
 }
 .pentagon-container {
   background: url("./images/bg-pentagon.svg");
   background-repeat: no-repeat;
   background-position: center;
+  height: 25rem;
 }
 .triangle-container {
   background: url("./images/bg-triangle.svg");
   background-repeat: no-repeat;
   background-position: center;
+  height: 22rem;
 }
 .paper {
   background: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
@@ -78,6 +85,11 @@ body {
   top: 25%;
   left: 63%;
 }
+.triangle-container .paper {
+  position: absolute;
+  top: 2%;
+  left: 20%;
+}
 .scissors {
   background: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
   box-shadow: 0px 7px 1px -1px #805505;
@@ -86,6 +98,11 @@ body {
   position: absolute;
   top: 2%;
   left: 41%;
+}
+.triangle-container .scissors {
+  position: absolute;
+  top: 2%;
+  left: 60%;
 }
 .spock {
   background: linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
@@ -113,6 +130,11 @@ body {
   position: absolute;
   top: 69%;
   left: 57%;
+}
+.triangle-container .rock {
+  position: absolute;
+  top: 55%;
+  left: 40%;
 }
 /**********PENTAGON***********/
 .circle {
