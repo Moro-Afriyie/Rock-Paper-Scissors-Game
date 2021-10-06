@@ -115,7 +115,7 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
   }
   }
   return (
-    <section className="game-container" style={!control ? { justifyContent: "center", gap: "6rem" } : {}}>
+    <section className="game-container">
       <div className="player-side">
         <h3>YOU PICKED</h3>
         <div>

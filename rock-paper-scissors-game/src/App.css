@@ -175,11 +175,30 @@ body {
 }
 /**********GAME PAGE *******/
 .game-container {
-  display: flex;
+  /* display: flex;
+  width: 100%;
+  /* border: 1px solid blue; 
+  height: 25rem;
+  text-align: center;
+  align-items: center; */
   width: 100%;
   /* border: 1px solid blue; */
   height: 25rem;
   text-align: center;
+  /* align-items: center; */
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+.game-container .contol--active {
+  /* display: flex;  */
+  width: 100%;
+  /* border: 1px solid blue; */
+  height: 25rem;
+  text-align: center;
+  /* align-items: center; */
+  display: grid;
+  grid-auto-flow: column;
   align-items: center;
 }
 /* .game-container > * {
@@ -190,10 +209,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  align-items: center;
 }
-/* .computer-side {
-  margin-left: auto;
-} */
 .game-container h3 {
   color: #ffffff;
   font-size: 1.4rem;
