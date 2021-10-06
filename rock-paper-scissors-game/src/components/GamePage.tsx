@@ -41,6 +41,9 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
           setScore(prev=> prev+1);
         },300);
         }
+        else if(status === "draw 😁"){
+            return ;
+        }
         else{
           setTimeout(()=>{
           setScore(prev=> prev-1);
@@ -91,6 +94,9 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
    else if(player === "spock" && computer === "rock"){
     updateScore("you win 🏆");
   }
+   else if (player === computer || computer === player) {
+         updateScore("draw 😁");
+      }
   else{
     updateScore("you lose 😔");
   }
