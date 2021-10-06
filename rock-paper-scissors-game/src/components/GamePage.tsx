@@ -138,9 +138,6 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
         <div  className={winner==="player"?"player-win":""}>
           {chooseIcon(playerIcon)}
         </div>
-        {/* <div className="effect-left">
-            <Rock classType="circle-big rock" />
-        </div> */}
       </div>
       {control && <div className="controls">
         <h1>{status}</h1>

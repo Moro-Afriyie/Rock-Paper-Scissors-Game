@@ -38,7 +38,7 @@ function App() {
     <section className="container">
      <Score score={score} toggle={toggle}/>
      {/* toggle switch component */}
-     <label htmlFor="material-switch">
+     {!toggleDisplay && <label htmlFor="material-switch">
           <span>Game 1</span>
           <Switch
             checked={toggle}
@@ -57,6 +57,7 @@ function App() {
           />
           <span>Game 2</span>
         </label>
+        }
       {/* toggle switch component */}
      {toggleDisplay?
      <GamePage 
