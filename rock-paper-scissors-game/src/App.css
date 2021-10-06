@@ -259,9 +259,10 @@ body {
 .attribution {
   font-size: 15px;
   text-align: center;
+  color: hsl(225, 6%, 88%);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #de3f5c;
 }
 .footer button {
   border: 2px solid hsl(217, 16%, 45%);

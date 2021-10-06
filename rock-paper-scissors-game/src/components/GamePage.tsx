@@ -32,7 +32,7 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
     }
   }
 
-  
+
   const updateScore = (status:string)=>{
         setControl(true);
         setStatus(status);
@@ -129,7 +129,7 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
         <h1>{status}</h1>
         <button onClick={handlePlay}>PLAY AGAIN</button>
       </div>}
-      <div className="computer-side" style={control ? { marginLeft: "auto" } : { marginLeft: "0" }}>
+      <div className="computer-side">
         <h3>THE HOUSE PICKED</h3>
         <div className={`default ${isActive?"active":""}`}>
           <div>
