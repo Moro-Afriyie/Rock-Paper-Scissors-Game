@@ -36,7 +36,7 @@ function App() {
   return (
   <main className="App">
     <section className="container">
-     <Score score={score}/>
+     <Score score={score} toggle={toggle}/>
      {/* toggle switch component */}
      <label htmlFor="material-switch">
           <span>easy</span>
@@ -77,7 +77,7 @@ function App() {
           <h3>RULES</h3>
         <img onClick={()=>setModalIsOpen(false)} src={close }alt="close button" className="close" />
         </div>
-        <img src={rules }alt="game rules" className="rules_img" />
+        <img src={toggle? rulesBonus : rules }alt="game rules" className="rules_img" />
         
       </div>
     </Modal>

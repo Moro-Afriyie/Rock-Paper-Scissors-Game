@@ -12,4 +12,5 @@ export interface  GamePageProps extends PentagonProps{
 }
 export interface  ScoreProps {
   score: number;
+  toggle: boolean;
 }
