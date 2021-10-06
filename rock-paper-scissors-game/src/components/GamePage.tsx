@@ -32,7 +32,7 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
     }
   }
 
-  // will implement the game logic here
+  
   const updateScore = (status:string)=>{
         setControl(true);
         setStatus(status);

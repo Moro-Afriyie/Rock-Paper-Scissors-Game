@@ -57,7 +57,6 @@ body {
   width: 90%;
   background: url("./images/bg-pentagon.svg");
   background-repeat: no-repeat;
-  /* background-size: contain; */
   background-position: center;
   position: relative;
   height: 25rem;
@@ -68,8 +67,6 @@ body {
 }
 .pentagon-container .paper {
   position: absolute;
-  /* left: 25rem;
-  top: 8rem; */
   top: 25%;
   left: 63%;
 }
@@ -79,8 +76,6 @@ body {
 }
 .pentagon-container .scissors {
   position: absolute;
-  /* left: 16rem;
-  top: 2rem; */
   top: 2%;
   left: 41%;
 }
@@ -90,8 +85,6 @@ body {
 }
 .pentagon-container .spock {
   position: absolute;
-  /* top: 8rem;
-  left: 7rem; */
   top: 25%;
   left: 18%;
 }
@@ -101,8 +94,6 @@ body {
 }
 .pentagon-container .lizard {
   position: absolute;
-  /* left: 11rem;
-  top: 19rem; */
   top: 69%;
   left: 25%;
 }
@@ -112,8 +103,6 @@ body {
 }
 .pentagon-container .rock {
   position: absolute;
-  /* top: 19rem;
-  left: 22rem; */
   top: 69%;
   left: 57%;
 }
@@ -125,13 +114,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin: 2rem auto; */
   cursor: pointer;
 }
 .circle .inner-circle {
   background-color: white;
-  /* width: 85px;
-  height: 85px; */
   width: 95px;
   height: 88px;
   border-radius: 100%;
@@ -147,20 +133,15 @@ body {
 /******big circle*********/
 
 .circle-big {
-  /* height: 300px;
-  width: 300px; */
   height: 200px;
   width: 210px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin: 5rem auto; */
 }
 .circle-big .inner-circle {
   background-color: white;
-  /* width: 210px;
-  height: 210px; */
   width: 170px;
   height: 158px;
   border-radius: 100%;
@@ -175,35 +156,14 @@ body {
 }
 /**********GAME PAGE *******/
 .game-container {
-  /* display: flex;
   width: 100%;
-  /* border: 1px solid blue; 
   height: 25rem;
   text-align: center;
-  align-items: center; */
-  width: 100%;
-  /* border: 1px solid blue; */
-  height: 25rem;
-  text-align: center;
-  /* align-items: center; */
   display: grid;
   grid-auto-flow: column;
   align-items: center;
 }
-.game-container .contol--active {
-  /* display: flex;  */
-  width: 100%;
-  /* border: 1px solid blue; */
-  height: 25rem;
-  text-align: center;
-  /* align-items: center; */
-  display: grid;
-  grid-auto-flow: column;
-  align-items: center;
-}
-/* .game-container > * {
-  flex-basis: 100%;
-} */
+
 .player-side,
 .computer-side {
   display: flex;
