@@ -60,7 +60,7 @@ body {
   /* background-size: contain; */
   background-position: center;
   position: relative;
-  height: 26rem;
+  height: 25rem;
 }
 .paper {
   background: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
@@ -70,7 +70,7 @@ body {
   position: absolute;
   /* left: 25rem;
   top: 8rem; */
-  top: 28%;
+  top: 25%;
   left: 63%;
 }
 .scissors {
@@ -81,7 +81,7 @@ body {
   position: absolute;
   /* left: 16rem;
   top: 2rem; */
-  top: 6%;
+  top: 2%;
   left: 41%;
 }
 .spock {
@@ -92,7 +92,7 @@ body {
   position: absolute;
   /* top: 8rem;
   left: 7rem; */
-  top: 28%;
+  top: 25%;
   left: 18%;
 }
 .lizard {
@@ -103,8 +103,8 @@ body {
   position: absolute;
   /* left: 11rem;
   top: 19rem; */
-  top: 67%;
-  left: 26%;
+  top: 69%;
+  left: 25%;
 }
 .rock {
   background: linear-gradient(#de3f5c, #da2f4e);
@@ -114,8 +114,8 @@ body {
   position: absolute;
   /* top: 19rem;
   left: 22rem; */
-  top: 67%;
-  left: 55%;
+  top: 69%;
+  left: 57%;
 }
 /**********PENTAGON***********/
 .circle {
@@ -300,4 +300,51 @@ body {
   letter-spacing: 0.2rem;
   margin-right: 1rem;
   cursor: pointer;
+}
+.game_rules {
+  display: flex;
+  width: 100%;
+  margin: 1rem 0;
+}
+.game_rules .close {
+  margin-left: auto;
+  width: 1.3rem;
+  height: 1.3rem;
+  align-self: center;
+  cursor: pointer;
+}
+.game_rules h3 {
+  font-size: 1.7rem;
+  color: hsl(229, 25%, 31%);
+}
+.rules_img {
+  width: 19rem;
+  margin-bottom: 1rem;
+}
+.ReactModal__Content,
+.ReactModal__Content--after-open {
+  width: 310px;
+  display: grid;
+  place-items: center;
+  height: 390px;
+  border-radius: 10px !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%);
+}
+.ReactModal__Overlay,
+.ReactModal__Overlay--after-open {
+  background-color: hsla(0, 0%, 3%, 0.5) !important;
+}
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
 }
