@@ -205,34 +205,6 @@ body {
 }
 /**********GAME PAGE *******/
 
-/*****EFFECTS*********/
-.effect-left::before {
-  content: "";
-  background: radial-gradient(#2c3b5a 38%, #293857 38% 50%, #233455 50% 100%);
-  z-index: -3;
-  border-radius: 50%;
-  position: absolute;
-  margin: 1.5rem;
-  width: 450px;
-  height: 450px;
-  top: 25%;
-  left: 0;
-}
-.default .effect-right {
-  position: relative;
-}
-.default .effect-right::before {
-  content: "";
-  background: radial-gradient(#2c3b5a 38%, #293857 38% 50%, #233455 50% 100%);
-  z-index: -3;
-  border-radius: 50%;
-  position: absolute;
-  margin: 1.5rem;
-  width: 450px;
-  height: 450px;
-  top: -71%;
-  left: -70%;
-}
 @keyframes rotation {
   from {
     transform: rotateX(0);
@@ -345,8 +317,6 @@ body {
   z-index: -1;
 }
 
-/**668px****/
-/***I will use the mobile styling****/
 @media screen and (max-width: 670px) {
   html {
     font-size: 12px;

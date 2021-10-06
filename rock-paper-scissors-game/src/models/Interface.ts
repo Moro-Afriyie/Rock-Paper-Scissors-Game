@@ -3,6 +3,7 @@ export interface ClassTypeProp extends PentagonProps {
 }
 export interface  PentagonProps {
     handleToggleDisplay?: (value:boolean, icon:string)=>void;
+    toggle?:boolean;
 }
 export interface  GamePageProps extends PentagonProps{
   playerIcon: string;

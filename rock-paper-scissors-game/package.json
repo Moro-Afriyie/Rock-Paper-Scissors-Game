@@ -14,6 +14,8 @@
     "react-dom": "^17.0.2",
     "react-modal": "^3.14.3",
     "react-scripts": "4.0.3",
+    "react-switch": "^6.0.0",
+    "switch": "0.0.0",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },

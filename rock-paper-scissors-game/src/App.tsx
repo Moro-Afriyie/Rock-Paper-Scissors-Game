@@ -4,8 +4,10 @@ import GamePage from './components/GamePage';
 import Pentagon from './components/Pentagon';
 import Score from './components/Score';
 import Modal from 'react-modal';
-import rules from '../src/images/image-rules-bonus.svg';
-import close from '../src/images/icon-close.svg'
+import rulesBonus from '../src/images/image-rules-bonus.svg';
+import rules from '../src/images/image-rules.svg';
+import close from '../src/images/icon-close.svg';
+import Switch from 'react-switch';
 
 Modal.setAppElement('#root');
 
@@ -17,6 +19,7 @@ function App() {
   const [score, setScore] = useState(0);
   const [computerIcon, setComputerIcon] = useState(""); //computerIcon
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [toggle, setToggle] = useState(false);
 
    const handleToggleDisplay= (value:boolean, icon:string):void =>{
     let num = Math.floor(Math.random()*options.length);
@@ -24,11 +27,36 @@ function App() {
     setToggleDisplay(value);
     setPlayerIcon(icon);
   }
+
+  const handleChange = (toggle:boolean)=>{
+    setToggle(toggle);
+    console.log(toggle);
+  }
  
   return (
   <main className="App">
     <section className="container">
      <Score score={score}/>
+     {/* toggle switch component */}
+     <label htmlFor="material-switch">
+          <span>Switch with style inspired by Material Design</span>
+          <Switch
+            checked={toggle}
+            onChange={handleChange}
+            onColor="#86d3ff"
+            onHandleColor="#2693e6"
+            handleDiameter={30}
+            uncheckedIcon={false}
+            checkedIcon={false}
+            boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
+            activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.2)"
+            height={20}
+            width={60}
+            className="react-switch"
+            id="material-switch"
+          />
+        </label>
+      {/* toggle switch component */}
      {toggleDisplay?
      <GamePage 
      playerIcon={playerIcon}
@@ -37,7 +65,7 @@ function App() {
      computerIcon ={computerIcon}
       /> 
      : 
-     <Pentagon handleToggleDisplay={handleToggleDisplay}/>}
+     <Pentagon toggle={toggle}  handleToggleDisplay={handleToggleDisplay}/>}
     </section>
     <Modal
     isOpen={modalIsOpen}
