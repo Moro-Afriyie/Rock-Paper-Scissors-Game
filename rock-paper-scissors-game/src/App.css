@@ -279,6 +279,11 @@ body {
   letter-spacing: 0.2rem;
   margin-right: 1rem;
   cursor: pointer;
+  font-weight: 600;
+}
+.footer button:hover {
+  background-color: #bcc0c7;
+  color: black;
 }
 .game_rules {
   display: flex;
@@ -327,11 +332,14 @@ body {
 .ReactModal__Overlay--before-close {
   opacity: 0;
 }
-.controls,
+/* .controls,
 .computer-side h3,
 .player-side h3 {
-  z-index: 2;
-}
+  z-index: 1;
+} */
+/* Modal {
+  z-index: 3;
+} */
 
 .player-win,
 .computer-win {
@@ -343,3 +351,6 @@ body {
     0px 0px 0px 110px hsl(214deg 47% 23% / 60%),
     0px 0px 0px 160px hsl(214deg 47% 23% / 40%);
 }
+
+/**668px****/
+/***I will use the mobile styling****/
