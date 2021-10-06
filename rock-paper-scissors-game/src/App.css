@@ -327,3 +327,19 @@ body {
 .ReactModal__Overlay--before-close {
   opacity: 0;
 }
+.controls,
+.computer-side h3,
+.player-side h3 {
+  z-index: 2;
+}
+
+.player-win,
+.computer-win {
+  height: 200px;
+  width: 210px;
+  border-radius: 50%;
+  background-color: hsl(237, 49%, 15%);
+  box-shadow: 0px 0px 0px 50px hsl(214deg 47% 23% / 80%),
+    0px 0px 0px 110px hsl(214deg 47% 23% / 60%),
+    0px 0px 0px 160px hsl(214deg 47% 23% / 40%);
+}

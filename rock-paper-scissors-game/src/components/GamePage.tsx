@@ -13,6 +13,7 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
   const [control, setControl] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const [status, setStatus] = useState<string | null>(null);
+  const [winner, setWinner] = useState<string | null>(null);
 
   const chooseIcon = (value: string) => {
     if (value === "rock") {
@@ -65,40 +66,50 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
    */
   if(player === "scissors" && computer === "paper"){
     updateScore("you win 🏆");
+    setWinner("player");
   }
   else if(player === "paper" && computer === "rock"){
     updateScore("you win 🏆");
-    // updateScore("you win");
+   setWinner("player");
   }
    else if(player === "lizard" && computer === "spock"){
     updateScore("you win 🏆");
+    setWinner("player");
   }
    else if(player === "rock" && computer === "lizard"){
     updateScore("you win 🏆");
+    setWinner("player");
   }
    else if(player === "spock" && computer === "scissors"){
     updateScore("you win 🏆");
+    setWinner("player");
   }
    else if(player === "scissors" && computer === "lizard"){
     updateScore("you win 🏆");
+    setWinner("player");
   }
    else if(player === "paper" && computer === "spock"){
     updateScore("you win 🏆");
+    setWinner("player");
   }
    else if(player === "rock" && computer === "scissors"){
     updateScore("you win 🏆");
+    setWinner("player");
   }
    else if(player === "lizard" && computer === "paper"){
     updateScore("you win 🏆");
+    setWinner("player");
   }
    else if(player === "spock" && computer === "rock"){
     updateScore("you win 🏆");
+    setWinner("player");
   }
    else if (player === computer || computer === player) {
          updateScore("draw 😁");
       }
   else{
     updateScore("you lose 😔");
+    setWinner("computer");
   }
   }
   useEffect(()=>{
@@ -124,7 +135,7 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
     <section className="game-container">
       <div className="player-side">
         <h3>YOU PICKED</h3>
-        <div>
+        <div  className={winner==="player"?"player-win":""}>
           {chooseIcon(playerIcon)}
         </div>
         {/* <div className="effect-left">
@@ -138,7 +149,7 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
       <div className="computer-side">
         <h3>THE HOUSE PICKED</h3>
         <div className={`default ${isActive?"active":""}`}>
-          <div>
+          <div className={winner==="computer"?"computer-win":""}>
             {chooseIcon(computerIcon)}
           </div>
         </div>
