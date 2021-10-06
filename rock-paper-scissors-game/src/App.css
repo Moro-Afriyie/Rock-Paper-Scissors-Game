@@ -16,6 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1.5rem;
 }
 /********SCORE***********/
 .score-container {
@@ -72,13 +73,15 @@ body {
   background: url("./images/bg-pentagon.svg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 25rem;
+  height: 20rem;
+  background-size: contain;
 }
 .triangle-container {
   background: url("./images/bg-triangle.svg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 22rem;
+  height: 20rem;
+  background-size: contain;
 }
 .paper {
   background: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
@@ -91,8 +94,8 @@ body {
 }
 .triangle-container .paper {
   position: absolute;
-  top: 2%;
-  left: 20%;
+  top: -10%;
+  left: 18%;
 }
 .scissors {
   background: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
@@ -100,13 +103,13 @@ body {
 }
 .pentagon-container .scissors {
   position: absolute;
-  top: 2%;
+  top: -4%;
   left: 41%;
 }
 .triangle-container .scissors {
   position: absolute;
-  top: 2%;
-  left: 60%;
+  top: -10%;
+  left: 62%;
 }
 .spock {
   background: linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
@@ -137,7 +140,7 @@ body {
 }
 .triangle-container .rock {
   position: absolute;
-  top: 55%;
+  top: 70%;
   left: 40%;
 }
 /**********PENTAGON***********/
@@ -259,7 +262,7 @@ body {
 
 /************FOOTER******************/
 .footer {
-  /* border: 1px solid green; */
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -355,6 +358,13 @@ body {
   html {
     font-size: 12px;
   }
+  .container {
+    gap: 2.5rem;
+  }
+  .triangle-container,
+  .pentagon-container {
+    height: 20rem;
+  }
   .circle {
     height: 90px;
     width: 95px;
@@ -371,8 +381,26 @@ body {
     justify-content: center;
     gap: 0.5rem;
   }
+  .footer {
+    margin-top: 2rem;
+  }
   .footer button {
     align-self: center;
+  }
+  .triangle-container .scissors {
+    position: absolute;
+    top: -13%;
+    left: 65%;
+  }
+  .triangle-container .paper {
+    position: absolute;
+    top: -12%;
+    left: 11%;
+  }
+  .triangle-container .rock {
+    position: absolute;
+    top: 63%;
+    left: 39%;
   }
 }
 
@@ -383,5 +411,18 @@ body {
     display: grid;
     place-items: center;
     height: 91vh;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .triangle-container .paper {
+    position: absolute;
+    top: -12%;
+    left: -5%;
+  }
+  .triangle-container .rock {
+    position: absolute;
+    top: 63%;
+    left: 32%;
   }
 }
