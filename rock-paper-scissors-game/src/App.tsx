@@ -1,4 +1,5 @@
 import { useState } from "react";
+import React from "react";
 import "./App.css";
 import GamePage from "./components/GamePage";
 import Pentagon from "./components/Pentagon";
@@ -22,7 +23,7 @@ function App() {
   const [toggle, setToggle] = useState(false);
 
   const handleToggleDisplay = (value: boolean, icon: string): void => {
-    let num = Math.floor(Math.random() * options.length);
+    const num = Math.floor(Math.random() * options.length);
     setComputerIcon(options[num]);
     setToggleDisplay(value);
     setPlayerIcon(icon);
