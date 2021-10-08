@@ -1,22 +1,21 @@
-import * as React from 'react';
+import * as React from "react";
 import lizard from "../../images/icon-lizard.svg";
-import { ClassTypeProp } from '../../models/interface';
+import { ClassTypeProp } from "../../models/interface";
 
-const Lizard: React.FunctionComponent< ClassTypeProp> = (props) => {
-  const {classType, handleToggleDisplay}= props;
-  const handleToggle =()=>{
-    if(handleToggleDisplay!== undefined){
-      handleToggleDisplay(true,"lizard");
+const Lizard: React.FunctionComponent<ClassTypeProp> = (props) => {
+  const { classType, handleToggleDisplay } = props;
+  const handleToggle = () => {
+    if (handleToggleDisplay !== undefined) {
+      handleToggleDisplay(true, "lizard");
     }
-  }
-  return ( <div 
-    className={classType}
-     onClick={handleToggle}
-  >
+  };
+  return (
+    <div className={classType} onClick={handleToggle}>
       <div className="inner-circle">
-        <img src={lizard} alt="rock"/>
+        <img src={lizard} alt="rock" />
       </div>
-    </div>);
+    </div>
+  );
 };
 
 export default Lizard;
