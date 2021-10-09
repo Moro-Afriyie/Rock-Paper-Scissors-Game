@@ -12,7 +12,7 @@ import Switch from "react-switch";
 
 Modal.setAppElement("#root");
 
-const options1 = ["rock", "paper", "scissors"];
+const options1: string[] = ["rock", "paper", "scissors"];
 const options2: string[] = ["scissors", "spock", "paper", "rock", "lizard"];
 
 function App() {
