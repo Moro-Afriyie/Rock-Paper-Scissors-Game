@@ -25,13 +25,13 @@ function App() {
 
   const handleToggleDisplay = (value: boolean, icon: string): void => {
     if (toggle) {
-      let options = options2;
+      const options = options2;
       const num = Math.floor(Math.random() * options.length);
       setComputerIcon(options[num]);
       setToggleDisplay(value);
       setPlayerIcon(icon);
     } else {
-      let options = options1;
+      const options = options1;
       const num = Math.floor(Math.random() * options.length);
       setComputerIcon(options[num]);
       setToggleDisplay(value);
