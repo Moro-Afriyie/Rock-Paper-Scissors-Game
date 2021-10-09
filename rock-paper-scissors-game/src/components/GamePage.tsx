@@ -94,7 +94,6 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
     }
   };
   useEffect(() => {
-    console.log({ playerIcon, computerIcon });
     setTimeout(() => {
       setIsActive(true);
       setTimeout(() => {
@@ -104,7 +103,6 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
 
     return clearTimeout();
   }, []);
-  
 
   const handlePlay = () => {
     if (handleToggleDisplay !== undefined) {

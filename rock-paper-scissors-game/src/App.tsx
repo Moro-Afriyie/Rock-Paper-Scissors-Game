@@ -34,17 +34,6 @@ function App() {
     setScore(0);
   };
 
-  useEffect(() => {
-    localStorage.setItem("score", score.toString());
-  }, [score]);
-
-  useEffect(() => {
-    const Savedscore = localStorage.getItem("score");
-    if (Savedscore) {
-      setScore(parseInt(Savedscore));
-    }
-  }, []);
-
   return (
     <main className="App">
       <section className="container">
