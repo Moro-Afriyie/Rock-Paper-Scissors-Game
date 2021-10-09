@@ -44,8 +44,8 @@ Users should be able to:
 ### Built with
 
 - [React](https://reactjs.org/) - JS library
-- [TypeScript]() - React framework
-- [React Hooks (useState, useEffect)]()
+- [TypeScript](https://www.typescriptlang.org/) - TypeScript
+- [React Hooks (useState, useEffect)](https://reactjs.org/docs/hooks-intro.html)
 <!-- 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
