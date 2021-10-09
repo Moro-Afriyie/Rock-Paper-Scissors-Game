@@ -32,6 +32,7 @@ Users should be able to:
 ### Screenshot
 
 ![](https://github.com/Moro-Afriyie/Rock-Paper-Scissors-Game/blob/main/rock-paper-scissors-game/src/images/Game%201.png)
+![](https://github.com/Moro-Afriyie/Rock-Paper-Scissors-Game/blob/main/rock-paper-scissors-game/src/images/Game%202.png)
 
 ### Links
 
