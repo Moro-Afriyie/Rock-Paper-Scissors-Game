@@ -12,7 +12,8 @@ import Switch from "react-switch";
 
 Modal.setAppElement("#root");
 
-const options: string[] = ["scissors", "spock", "paper", "rock", "lizard"];
+const options1 = ["rock", "paper", "scissors"];
+const options2: string[] = ["scissors", "spock", "paper", "rock", "lizard"];
 
 function App() {
   const [toggleDisplay, setToggleDisplay] = useState(false);
@@ -23,10 +24,19 @@ function App() {
   const [toggle, setToggle] = useState(false);
 
   const handleToggleDisplay = (value: boolean, icon: string): void => {
-    const num = Math.floor(Math.random() * options.length);
-    setComputerIcon(options[num]);
-    setToggleDisplay(value);
-    setPlayerIcon(icon);
+    if (toggle) {
+      let options = options2;
+      const num = Math.floor(Math.random() * options.length);
+      setComputerIcon(options[num]);
+      setToggleDisplay(value);
+      setPlayerIcon(icon);
+    } else {
+      let options = options1;
+      const num = Math.floor(Math.random() * options.length);
+      setComputerIcon(options[num]);
+      setToggleDisplay(value);
+      setPlayerIcon(icon);
+    }
   };
 
   const handleChange = (toggle: boolean) => {
