@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Moro-Afriyie/Rock-Paper-Scissors-Game](https://github.com/Moro-Afriyie/Rock-Paper-Scissors-Game)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [ https://www.frontendmentor.io/solutions/rock-paper-scissors-game-using-react-and-typescript-cp1r9bK9M](https://www.frontendmentor.io/solutions/rock-paper-scissors-game-using-react-and-typescript-cp1r9bK9M)
+- Live Site URL: [https://rock-paper-scissors-23eb92.netlify.app/](https://rock-paper-scissors-23eb92.netlify.app/)
 
 ## My process
 
