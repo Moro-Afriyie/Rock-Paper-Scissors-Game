@@ -104,6 +104,7 @@ const GamePage: React.FunctionComponent<GamePageProps> = (props) => {
 
     return clearTimeout();
   }, []);
+  
 
   const handlePlay = () => {
     if (handleToggleDisplay !== undefined) {

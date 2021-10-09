@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
 import "./App.css";
 import GamePage from "./components/GamePage";
@@ -33,6 +33,17 @@ function App() {
     setToggle(toggle);
     setScore(0);
   };
+
+  useEffect(() => {
+    localStorage.setItem("score", score.toString());
+  }, [score]);
+
+  useEffect(() => {
+    const Savedscore = localStorage.getItem("score");
+    if (Savedscore) {
+      setScore(parseInt(Savedscore));
+    }
+  }, []);
 
   return (
     <main className="App">
